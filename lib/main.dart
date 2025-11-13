@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowMaterialGrid: false,
       title: 'Flutter App', // TODO: Change this to your app's name
       theme: AppTheme.getTheme(),
       home: const HomeScreen(),
