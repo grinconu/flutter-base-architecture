@@ -1,4 +1,4 @@
-# base_achitecture
+# base_architecture
 
 A new Flutter project.
 

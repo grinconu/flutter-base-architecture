@@ -1,6 +1,6 @@
 {
-    "name": "base_achitecture",
-    "short_name": "base_achitecture",
+    "name": "base_architecture",
+    "short_name": "base_architecture",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
