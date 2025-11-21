@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Home'),
       ),
       body: const Center(
-        child: Text('Home Screen'),
+        child: Text('Welcome Home!'),
       ),
     );
   }

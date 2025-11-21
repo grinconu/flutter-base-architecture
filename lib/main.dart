@@ -1,8 +1,10 @@
-import 'package:base_architecture/presentation/config/app_theme.dart';
-import 'package:base_architecture/presentation/screens/home/home_screen.dart';
+import 'package:base_architecture/core/di/injection.dart';
+import 'package:base_architecture/core/router/app_router.dart';
+import 'package:base_architecture/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  configureDependencies();
   runApp(const MyApp());
 }
 
@@ -11,11 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
-      title: 'Flutter App', // TODO: Change this to your app's name
+      title: 'Base Architecture',
       theme: AppTheme.getTheme(),
-      home: const HomeScreen(),
+      routerConfig: appRouter,
     );
   }
 }
